@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/main.css">
+  <title>Fruiter</title>
+</head>
+<body>
+  <header id=Home>
+    <h1>Welcome to Fruiter(Hover to rotate!)</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#product">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>Welcome to our <b>fruit</b> website! We are <strong>fruiters</strong> who passionate about showcasing <b>a variety of delicious fruits.</b></p>
+    </section>
+    
+		<section>
+      <h2>Why eat fruits?</h2>
+      <p>There's an old saying: <i>An apple a day keeps the doctor away.</i> Fruits are considered <em>healthy</em> for several reasons:
+
+			<p>Nutrient-Rich: Fruits are packed with essential vitamins, minerals, 
+			and antioxidants that are important for overall health. 
+			They provide a wide range of nutrients such as vitamin C, potassium, folate, and dietary fiber.</p>
+
+			<p>Fiber Content: Fruits are a great source of dietary fiber, which helps promote healthy digestion, 
+			regulate blood sugar levels, and maintain a healthy weight. <br> Fiber also contributes to a feeling of fullness, 
+			which can help prevent overeating.</p>
+
+			<p>Antioxidants: Fruits are rich in antioxidants, 
+			which help protect the body against damage caused by harmful free radicals. 
+			Antioxidants are known to have anti-inflammatory properties and may help 
+			reduce the risk of chronic diseases, including heart disease and certain types of cancer.</p>
+    </section>
+		
+    <section>
+			<div>
+      <h2>Our fruits:</h2>
+      <ul>
+
+
+        <li><span style="color:red">Apples</span>
+				<picture>
+					<img src="images/apple.jpg" alt="apple pic" style="width:auto;">
+				</picture>
+				</li>
+				
+				
+        <li><span style="color:yellow">Banana</span>
+				<picture>
+					<img src="images/banana.jpg" alt="banana pic" style="width:440px;height:130px;">
+				</picture>
+				</li>
+				
+				
+        <li><span style="color:purple">Grape</span>
+				<picture>
+					<img src="images/grape.jpg" alt="grape pic" style="width:440px;height:220px;">
+					<figcaption>There are two  types of grape!</figcaption>
+				</picture>
+				</li>
+				
+			</ul>
+			
+		<table id="product" class="fruit-table">
+					<caption>Fruit price for sale</caption>
+			<thead>
+				<tr>
+					<th>Fruit</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Apple</td>
+					<td>$2</td>
+				</tr>
+				<tr>
+					<td>Banana</td>
+					<td>$3</td>
+				</tr>
+				<tr>
+					<td>Grape</td>
+					<td>$3.28</td>
+				</tr>
+				<tr>
+					<td>watermelon</td>
+					<td>$9.99</td>
+				</tr>
+				</tbody>
+			</table>
+		
+			</div>
+			<hr>
+			<h2>some other foods</h2>
+			
+			<ol>
+				<li>watermelon</li>
+				<li>durian</li>
+				<li>passionfruit</li>
+			</ol>
+			
+			<form>
+				<label for="fruit">choose your favorite fruit!</label>
+				<select name="fruit" id="fruit">
+					<optgroup label="sweet fruit">
+						<option value="apple">apple</option>
+						<option value="banana">banana</option>
+					</optgroup>
+					<optgroup label="sour fruit">
+						<option value="lemon">lemon</option>
+						<option value="pineapple">pineapple</option>
+					</optgroup>
+				</select>
+				<br><br>
+				<input type="submit" value="Submit">
+			</form>
+			
+		<section>
+			<h2>Choose Your Least Favorite Fruit</h2>
+			<form action="/action_page.php">
+				<label for="hate-list-name">The fruits you hate the most, type or select:</label>
+				<input list="hate-list-2" id="hate-list-name" name="hate-list-name">
+				<datalist id="hate-list-2">
+					<option value="lemon">
+					<option value="durian">
+					<option value="avocado">
+					<option value="pears">
+				</datalist>
+				<br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+
+			
+			
+    </section>
+    <div>
+			<iframe src="images/happy.jpg" height="200" width="300" title="Iframe Example" alt="Happy fruit image"></iframe>
+    <section>
+      <h2>Contact Us</h2>
+			<h3>Do you also like fruits? Tell us your story with fruits!:</h3>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
+		</div>
+		<aside>
+			<h2>Experiment(Contents are displayed in <strong>flexbox!</strong>)</h2>
+			
+			
+			<div class=flex-container>
+			<div>
+			<code>for i in range(99):
+							print("I love Fruits")
+			</code>
+			</div>
+			<div>
+			<pre>This sentence in pre tag reserves s p  a  c  e    !</pre>
+			</div>
+			
+			<div>
+			<audio controls>Listen to music while browsing
+			<source src="images/music.ogg" type="audio/ogg">
+			</audio>
+			</div>
+			
+			<div>
+			<video width="320" height="240" controls>
+				<source src="images/fruit.mp4" type="video/mp4">
+				A video of fruit
+			</video>
+			</div>
+			
+			<div>
+			<textarea>this is a textarea</textarea>
+			</div>
+			
+			<div>
+			<details>
+				<summary>summary test</summary>
+				<p>This is a part of develop experiment.
+			</details>			
+			</div>
+			
+			<div>
+			<button type="button">Don't click this, nothing will happen!</button>
+			</div>
+			
+			<div>
+			<table>
+				<colgroup>
+					<col>
+					<col>
+				</colgroup>
+				<tr>
+					<th>fruit</th>
+					<th>sugar level</th>
+				</tr>
+				<tr>
+					<td>apple</td>
+					<td>2%</td>
+				</tr>
+				<tr>
+					<td>banana</td>
+					<td>3%</td>
+				</tr>
+			</table>
+			</div>
+			
+		<div>
+		<p>draw by script:</p>
+		<canvas id="Canvas" width="200" height="100" style="border:1px solid #d2d2d2;"></canvas>
+		<script>
+		var c = document.getElementById("Canvas");
+		var ctx = c.getContext("2d");
+		ctx.moveTo(0,0);
+		ctx.lineTo(150,180);
+		ctx.stroke();
+		</script>
+		<svg width="200" height="100">
+			<rect width="200" height="100" style="fill:rgb(0,255,255);stroke-width:8;stroke:rgb(0,0,0)" />
+		</svg>	
+		</div>
+		</div>
+		
+		</aside>
+		
+	
+		
+
+
+
+  </main>
+  
+  <footer id=about>
+	<p>&copy; 2023 Fruiter Website. All rights reserved.</p>
+       
+    
+		<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+         
+  </footer>
+</body>
+</html>

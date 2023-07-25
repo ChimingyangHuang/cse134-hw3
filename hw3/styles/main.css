@@ -1,0 +1,189 @@
+:root {
+  --mycolor1: #1e90ff;
+  --mycolor2: #faf067;
+}
+
+@font-face {
+  font-family: "customFont";
+  src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
+}
+
+/* Define relative units */
+:root {
+  font-size: 16px;
+}
+
+/* Use relative units */
+.fruit-table {
+  width: 100%;
+  background-color: var(--mycolor2);
+  border-collapse: collapse;
+  border: 0.75em solid var(--mycolor1);
+}
+
+.fruit-table th, .fruit-table td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: left;
+}
+
+.fruit-table th {
+  background-color: #f2f2f2;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #f9f9f9;
+  padding: 5vh;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 8vw;
+  }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 6vw;
+  }
+}
+
+/* Large screens (desktops) */
+@media screen and (min-width: 1025px) {
+  header h1 {
+    font-size: 4vw;
+  }
+}
+
+header h1 {
+  font-family: 'customFont';
+  margin: 0;
+  transition: width 2s, height 2s, background-color 2s, transform 2s; /* Adjust the property name */
+  display: inline-block; /* Add display inline-block to enable width and height */
+  transform: rotate(0deg); /* Set initial rotation to 0 degrees */
+}
+
+header h1:hover {
+  background-color: #ffcccc;
+  transform: rotate(50deg); /* Use transform for rotation */
+}
+
+nav ul {
+  font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+  list-style: none;
+  padding: 0;
+  font-size: 1em;
+}
+
+nav li {
+  display: inline;
+  margin-right: 2vw;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Main section styles */
+main {
+  padding: 5vh;
+}
+main section div{
+	background-color: white;
+	animation-name: animation;
+  animation-duration: 12s;
+}
+@keyframes animation {
+  from {background-color: white;}
+  to {background-color: deepskyblue;}
+}
+
+h2 {
+  border-bottom: 0.25vw solid #333;
+  padding-bottom: 0.625vw;
+}
+
+/* Fruits section styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li picture img,
+ul li figure img {
+  display: block;
+  max-width: 100%;
+  border: 10px solid #ccc; /* Add border to the images */
+}
+
+li {
+  margin-bottom: 2vh;
+}
+
+ul li:hover {
+  background-color: #ffcccc;
+  transform: scale(1.05);
+}
+
+li span {
+  font-size: 1.125em;
+}
+
+.flex-container {
+	flex-direction: column;
+  display: flex;
+  background-color: beige;
+}
+
+.flex-container > div {
+	
+  background-color: floralwhite;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+caption {
+  font-size: 20px;
+  text-align: center;
+  color: purple;
+}
+
+
+
+
+form {
+  margin-top: 3vh;
+}
+
+label, input, textarea, button {
+  display: block;
+  margin-bottom: 1.563vh;
+}
+
+button {
+  padding: 1.563vh 2.5vw;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+video {
+	transform: translate(20px, 20px) rotate(50deg);
+}
+/* Footer styles */
+footer {
+  background-color: #f9f9f9;
+  padding: 1.563vh;
+  text-align: center;
+}
